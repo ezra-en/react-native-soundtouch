@@ -60,11 +60,13 @@ To fix formatting errors, run the following:
 yarn lint --fix
 ```
 
-Remember to add tests for your change if possible. Run the unit tests by:
+~~Remember to add tests for your change if possible. Run the unit tests by:~~
 
 ```sh
 yarn test
 ```
+
+Jest doesn't support testing of Native Modules. The docs tell you to mock native code, which misses the point of testing a native module entirely.
 
 ### Commit message convention
 
