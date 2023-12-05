@@ -20,3 +20,11 @@ const Soundtouch = NativeModules.Soundtouch
 export function multiply(a: number, b: number): Promise<number> {
   return Soundtouch.multiply(a, b);
 }
+
+export function getVersionString(): Promise<string> {
+  return Soundtouch.getVersionString();
+}
+
+export function createSoundTouch(): number {
+  return Soundtouch.createSoundTouch();
+}
